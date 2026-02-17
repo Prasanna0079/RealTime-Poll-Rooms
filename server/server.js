@@ -31,7 +31,7 @@ connectDB();
 // Middleware
 app.use(helmet()); // Security headers
 app.use(cors({
-  origin: 'https://real-time-poll-rooms-6g6l.vercel.app/' || 'http://localhost:5173',
+  origin: "*",
   credentials: true
 }));
 app.use(express.json());
